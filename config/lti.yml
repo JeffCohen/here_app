@@ -1,3 +1,6 @@
 development:
   key: hockey
   secret: turing
+production:
+  key: alan
+  secret: turing
