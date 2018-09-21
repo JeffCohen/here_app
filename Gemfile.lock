@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/instructure/ims-lti.git
+  revision: 83959e21aad9a2c24f63dcfc78e232a13e9d2758
+  branch: 1.2.x
+  specs:
+    ims-lti (1.2.2)
+      builder
+      oauth (>= 0.4.5, < 0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -111,6 +120,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
+    oauth (0.5.4)
     pg (1.0.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -213,6 +223,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   haml
+  ims-lti!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg

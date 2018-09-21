@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
 
-  get 'tools/index'
-  root 'tools#index'
-  
-  resources :tools
+  root 'attendances#index'
+
+  post '/launch' => 'attendances#index'
+
 
 
 end

@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'haml'
+gem 'ims-lti', git: "https://github.com/instructure/ims-lti.git", branch: "1.2.x"
 
 gem 'rails', '~> 5.2.0'
 gem 'puma', '~> 3.11'
@@ -19,6 +20,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'awesome_print'
 end
 
 group :production do
@@ -27,7 +29,6 @@ end
 
 group :development do
   gem 'pry-rails'
-  gem 'awesome_print'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
